@@ -40,7 +40,7 @@ def setup(canvas):
 
 
 def all_dead():
-    if Invader.alive_invader_count < 55:
+    if Invader.alive_invader_count <= 0:
         return True
     return False
 
