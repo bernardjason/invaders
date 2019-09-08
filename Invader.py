@@ -5,10 +5,23 @@ from InvaderMissile import InvaderMissile
 from PlayerMissile import PlayerMissile
 import Explosion
 import random
+import Sound
+
+
+sound=0
+sound_after=50
 
 
 def invader_group_change():
+    global sound,sound_after
+    sound=sound+1
     Invader.dont_move_down_clicks = Invader.dont_move_down_clicks + 1
+
+    if sound%sound_after == 0:
+        Sound.play()
+
+    sound_after = 25 + Invader.alive_invader_count
+    if sound_after < 15: sound_after=15
 
     if Invader.next_direction != 0:
         Invader.direction = Invader.next_direction
@@ -113,6 +126,7 @@ class Invader(Collision):
 
     def hit(self, other):
         if isinstance(other, PlayerMissile):
+            Sound.invader()
             Invader.alive_invader_count = Invader.alive_invader_count - 1
             RunningValues.delete_list.append(self)
             if self in RunningValues.render_list:

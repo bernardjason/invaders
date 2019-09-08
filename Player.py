@@ -2,7 +2,7 @@ from tkinter import *
 from Collision import Collision
 import Explosion
 import RunningValues
-
+import Sound
 
 class Player(Collision):
     missile = 0
@@ -30,6 +30,7 @@ class Player(Collision):
 
     def hit(self, other):
         if str(type(other)).__contains__("Invader"):
+            Sound.hit()
             lives = RunningValues.lives_variable.get()
             lives = lives - 1
             RunningValues.lives_variable.set(lives)

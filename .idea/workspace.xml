@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ef60c5e-5240-40fa-9878-f3bc203dea2c" name="Default Changelist" comment="added bunkers, tried some code cleanup, start new game if complete">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bunker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Explosion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3ef60c5e-5240-40fa-9878-f3bc203dea2c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sound.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collision.py" beforeDir="false" afterPath="$PROJECT_DIR$/Collision.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Invader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Invader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InvaderMissile.py" beforeDir="false" afterPath="$PROJECT_DIR$/InvaderMissile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/Player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerMissile.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerMissile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerTurret.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerTurret.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RunningValues.py" beforeDir="false" afterPath="$PROJECT_DIR$/RunningValues.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="2318">
               <caret line="126" column="4" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="4" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -86,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="296">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -101,8 +91,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Invader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="182">
+              <caret line="128" column="25" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sound.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -110,7 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlayerTurret.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="315">
+              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -118,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RunningValues.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="912">
               <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -161,11 +164,12 @@
         <option value="$PROJECT_DIR$/Bunker.py" />
         <option value="$PROJECT_DIR$/Game.py" />
         <option value="$PROJECT_DIR$/Explosion.py" />
-        <option value="$PROJECT_DIR$/Invader.py" />
-        <option value="$PROJECT_DIR$/Player.py" />
         <option value="$PROJECT_DIR$/RunningValues.py" />
         <option value="$PROJECT_DIR$/Collision.py" />
         <option value="$PROJECT_DIR$/PlayerMissile.py" />
+        <option value="$PROJECT_DIR$/Invader.py" />
+        <option value="$PROJECT_DIR$/Player.py" />
+        <option value="$PROJECT_DIR$/Sound.py" />
         <option value="$PROJECT_DIR$/PlayerTurret.py" />
       </list>
     </option>
@@ -325,22 +329,36 @@
       <option name="presentableId" value="Default" />
       <updated>1566801223219</updated>
     </task>
+    <task id="LOCAL-00001" summary="added bunkers, tried some code cleanup, start new game if complete">
+      <created>1567951262144</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567951262144</updated>
+    </task>
+    <task id="LOCAL-00002" summary="took out temp game complete for testing">
+      <created>1567951415915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567951415915</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18488745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18703108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32949308" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32949308" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32949308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39976957" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -348,6 +366,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32949308" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -360,7 +379,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added bunkers, tried some code cleanup, start new game if complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bunkers, tried some code cleanup, start new game if complete" />
+    <MESSAGE value="took out temp game complete for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="took out temp game complete for testing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/lib/python3.7/datetime.py">
@@ -424,20 +444,20 @@
     <entry file="file://$PROJECT_DIR$/invader.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bunker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="2318">
           <caret line="126" column="4" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="4" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bunker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -448,12 +468,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlayerMissile.py">
+    <entry file="file://$PROJECT_DIR$/RunningValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="912">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -468,36 +488,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Player.py">
+    <entry file="file://$PROJECT_DIR$/PlayerMissile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Invader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlayerTurret.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RunningValues.py">
+    <entry file="file://$PROJECT_DIR$/Invader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="182">
+          <caret line="128" column="25" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sound.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlayerTurret.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

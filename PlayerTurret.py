@@ -2,6 +2,7 @@ from PlayerMissile import *
 import RunningValues
 from Collision import Collision
 import Explosion
+import Sound
 
 
 class PlayerTurret(Collision):
@@ -40,6 +41,7 @@ class PlayerTurret(Collision):
 
     def hit(self, other):
         if str(type(other)).__contains__("Invader"):
+            Sound.hit()
             lives = RunningValues.lives_variable.get()
             lives = lives - 1
             RunningValues.lives_variable.set(lives)
