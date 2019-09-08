@@ -75,7 +75,7 @@ def render():
         RunningValues.player_turret.fire()
 
     if pressedStatus["Escape"]:
-        exit(0)
+        sys.exit(0)
 
     for f in RunningValues.render_list:
         f.render()
@@ -105,7 +105,7 @@ def render():
     else:
         play_again = messagebox.askyesno("Game Over", "score %i new game?" % (RunningValues.score_variable.get()))
         if not play_again:
-            exit(0)
+            sys.exit(0)
 
         canvas.delete("all")
         RunningValues.player_dead()
