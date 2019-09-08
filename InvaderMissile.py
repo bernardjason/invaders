@@ -17,7 +17,7 @@ class InvaderMissile(Collision):
         self.x = x - self.width/2
         self.y = y - self.height/2
         self.shape=canvas.create_rectangle(self.x, self.y, self.x + self.width, self.y + self.height,
-                                                 fill="red")
+                                                 fill="#32b855")
 
     def move(self, by: int):
         if ( self.y > RunningValues.canvas_height  )  :
@@ -33,7 +33,8 @@ class InvaderMissile(Collision):
         self.move(1)
 
     def hit(self,other):
-        if str(type(other)).__contains__("Player") :
+        hit_what = str(type(other))
+        if hit_what.__contains__("Player") or hit_what.__contains__("Bunker") :
             RunningValues.delete_list.append(self)
             RunningValues.render_list.remove(self)
             self.canvas.delete(self.shape)
