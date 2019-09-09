@@ -88,8 +88,8 @@ class Invader(Collision):
         self.img2 = canvas.create_image(self.x, self.y, image=RunningValues.invader_photo2)
 
     def move(self, byx: int, byy: int):
-        self.speed = Invader.invader_count / (Invader.alive_invader_count + 1) / 3
-        self.speed = self.speed + 3
+        self.speed = (Invader.invader_count*4) / (Invader.alive_invader_count + 7)
+        self.speed = self.speed + 2
         byx = byx * self.speed
         self.x = self.x + byx
         byy = byy * self.speed * 2
