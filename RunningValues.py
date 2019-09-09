@@ -4,6 +4,7 @@ from Player import Player
 from PlayerTurret import PlayerTurret
 
 render_list = list()
+collision_list = list()
 canvas_width = 1000
 canvas_height = 800
 

@@ -8,11 +8,11 @@ colours = ("red", "yellow")
 
 master = Tk()
 
-master.attributes("-fullscreen", True)
 
 RunningValues.invader_photo1 = PhotoImage(file="invader.gif")
 RunningValues.invader_photo2 = PhotoImage(file="invader2.gif")
 
+master.attributes("-fullscreen", True)
 RunningValues.canvas_width = master.winfo_screenwidth()
 RunningValues.canvas_height = master.winfo_screenheight()
 
@@ -56,9 +56,20 @@ def set_bindings():
         master.bind("<KeyRelease-%s>" % char, released)
 
 
+tps_ticker=0
+tps_last_ticker=0
+time_taken=0
+tps_last=0
 def render():
-    global canvas
+    global canvas,tps_ticker,tps_last,tps_last_ticker,time_taken
+    xx= RunningValues.unix_time_millis()
     now = RunningValues.unix_time_millis()
+    tps_ticker=tps_ticker+1
+    if now-tps_last > 1000:
+        print(time_taken / (tps_ticker - tps_last_ticker),(tps_ticker - tps_last_ticker))
+        tps_last_ticker = tps_ticker
+        time_taken = 0
+        tps_last=now
 
     if RunningValues.is_create_player:
         RunningValues.create_player(canvas)
@@ -80,11 +91,12 @@ def render():
     for f in RunningValues.render_list:
         f.render()
 
-    for f in RunningValues.render_list:
+    for f in RunningValues.collision_list:
         for o in RunningValues.render_list:
             if o != f and f.collide(o):
                 f.hit(o)
                 o.hit(f)
+
 
     for d in RunningValues.delete_list:
         del d
@@ -113,6 +125,7 @@ def render():
         start_game()
         master.after(int(10 - diff), render)
 
+    time_taken = time_taken + RunningValues.unix_time_millis() - xx
 
 def start_game(score=0, lives=3):
     global canvas, pressedStatus
@@ -121,6 +134,7 @@ def start_game(score=0, lives=3):
     for f in RunningValues.render_list:
         del f
     RunningValues.render_list.clear()
+    RunningValues.collision_list.clear()
 
     RunningValues.game_over = False
     Invader.setup(canvas)

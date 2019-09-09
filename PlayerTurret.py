@@ -37,7 +37,7 @@ class PlayerTurret(Collision):
         if now > self.time_since_last_fire:
             RunningValues.render_list.append(
                 PlayerMissile(self.canvas, self.x + self.width / 2, self.y - self.height / 2))
-            self.time_since_last_fire = now + 300
+            self.time_since_last_fire = now + 500
 
     def hit(self, other):
         if str(type(other)).__contains__("Invader"):

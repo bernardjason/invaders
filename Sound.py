@@ -1,21 +1,32 @@
-import simpleaudio as sa
+try:
 
-filename = '/src/python/invaders/invader.wav'
-background = sa.WaveObject.from_wave_file('invader.wav')
-invader_hit = sa.WaveObject.from_wave_file('invaderhit.wav')
-player_hit = sa.WaveObject.from_wave_file('playerhit.wav')
+    import simpleaudio as sa
 
-
-def play():
-    global background
-    background.play()
+    background = sa.WaveObject.from_wave_file('invader.wav')
+    invader_hit = sa.WaveObject.from_wave_file('invaderhit.wav')
+    player_hit = sa.WaveObject.from_wave_file('playerhit.wav')
 
 
-def invader():
-    global invader_hit
-    invader_hit.play()
+    def play():
+        global background
+        background.play()
 
 
-def hit():
-    global player_hit
-    player_hit.play()
+    def invader():
+        global invader_hit
+        invader_hit.play()
+
+
+    def hit():
+        global player_hit
+        player_hit.play()
+
+except ImportError as e:
+    def play():
+        return
+
+    def invader():
+        return
+
+    def hit():
+        return

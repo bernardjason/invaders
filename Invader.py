@@ -89,7 +89,7 @@ class Invader(Collision):
 
     def move(self, byx: int, byy: int):
         self.speed = Invader.invader_count / (Invader.alive_invader_count + 1) / 3
-        self.speed = self.speed + 1
+        self.speed = self.speed + 3
         byx = byx * self.speed
         self.x = self.x + byx
         byy = byy * self.speed * 2
@@ -105,6 +105,9 @@ class Invader(Collision):
 
     def render(self):
         self.ticker = self.ticker + 1
+        if self.ticker % 5 < 4:
+            return
+
         if Invader.move_down > 0:
             self.move(0, 1)
         else:

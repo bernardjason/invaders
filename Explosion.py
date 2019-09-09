@@ -35,12 +35,15 @@ class Explosion(Collision):
                                              fill=colours[random.randrange(0, 3)])
 
     def render(self):
-        self.canvas.move(self.shape, self.addx, self.addy)
         self.ticker = self.ticker + 1
-        if self.ticker > 75:
+        if self.ticker % 8 < 5:
+            return
+        self.canvas.move(self.shape, self.addx, self.addy)
+        if self.ticker > 50:
             if self in RunningValues.render_list:
                 RunningValues.render_list.remove(self)
             self.canvas.delete(self.shape)
+            RunningValues.delete_list.append(self)
         return
 
     def hit(self, other):
